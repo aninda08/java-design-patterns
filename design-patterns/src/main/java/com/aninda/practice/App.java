@@ -1,5 +1,8 @@
 package com.aninda.practice;
 
+import com.aninda.practice.creational.abstractfactory.BaseFactory;
+import com.aninda.practice.creational.abstractfactory.BaseFactory.AvailableProduct;
+import com.aninda.practice.creational.abstractfactory.IProduct;
 import com.aninda.practice.creational.factory.ShapeFactory;
 import com.aninda.practice.creational.factory.model.Shape;
 import com.aninda.practice.creational.factory.model.ShapeType;
@@ -20,7 +23,7 @@ import com.aninda.practice.creational.factory.model.ShapeType;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
     	/**
     	 * -----------------Builder patterns----------------
@@ -60,6 +63,13 @@ public class App
     	 * Shape shape = ShapeFactory.getInstance(ShapeType.CIRCLE, 100, 40);
     	 * System.out.println(shape);
     	 */
+    	
+    	/**
+    	 * Abstract Factory
+    	 * IProduct product = new BaseFactory().produce(AvailableProduct.LAPTOP);
+    	 * product.consume();
+    	 */
+    	
     	
     	
     }
