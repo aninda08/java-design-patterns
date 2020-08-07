@@ -1,11 +1,12 @@
 package com.aninda.practice;
 
-import com.aninda.practice.creational.abstractfactory.BaseFactory;
-import com.aninda.practice.creational.abstractfactory.BaseFactory.AvailableProduct;
-import com.aninda.practice.creational.abstractfactory.IProduct;
-import com.aninda.practice.creational.factory.ShapeFactory;
-import com.aninda.practice.creational.factory.model.Shape;
-import com.aninda.practice.creational.factory.model.ShapeType;
+import com.aninda.practice.creational.prototype.AddressClone;
+import com.aninda.practice.creational.prototype.AddressCopy;
+import com.aninda.practice.creational.prototype.AddressSerialized;
+import com.aninda.practice.creational.prototype.PersonClone;
+import com.aninda.practice.creational.prototype.PersonCopy;
+import com.aninda.practice.creational.prototype.PersonSerialized;
+import org.apache.commons.lang3.SerializationUtils;
 
 /**
  * Builder Patterns imports
@@ -18,11 +19,31 @@ import com.aninda.practice.creational.factory.model.ShapeType;
  * */
 
 /**
+ * Factory pattern imports
+ * 
+ * import com.aninda.practice.creational.factory.ShapeFactory;
+ * import com.aninda.practice.creational.factory.model.Shape;
+ * import com.aninda.practice.creational.factory.model.ShapeType;
+ */
+
+/**
+ * Abstract Factory Pattern imports
+ * 
+ * import com.aninda.practice.creational.abstractfactory.BaseFactory;
+ * import com.aninda.practice.creational.abstractfactory.BaseFactory.AvailableProduct;
+ * import com.aninda.practice.creational.abstractfactory.IProduct;
+ */
+
+/**
  * Design Patterns Demo implementations
  *
  */
 public class App 
 {
+    /**
+     * @param args
+     * @throws Exception
+     */
     public static void main( String[] args ) throws Exception
     {
     	/**
@@ -66,10 +87,50 @@ public class App
     	
     	/**
     	 * Abstract Factory
+    	 * 
     	 * IProduct product = new BaseFactory().produce(AvailableProduct.LAPTOP);
     	 * product.consume();
     	 */
     	
+    	/**
+    	 * ------------------Prototype patterns-----------------------
+    	 */
+    	
+    	/**
+    	 * Cloneable prototyping
+    	 * 
+    	 * PersonClone person1 = new PersonClone("Aninda", new AddressClone("R.N.T.P Bye Lane", "Shyamangar", "India"));
+    	 * PersonClone person2 = (PersonClone)person1.clone();
+    	 * person2.setName("Sumit");
+    	 * person2.getAddress().setStreetName("BN Bose Lane");
+    	 * person2.getAddress().setCity("kolkata");
+    	 * System.out.println(person1);
+    	 * System.out.println(person2);
+    	 */
+    	
+    	/**
+    	 * Copy constructor prototyping
+    	 * 
+    	 * PersonCopy person1 = new PersonCopy("Aninda", new AddressCopy("R.N.T.P Bye Lane", "Shyamangar", "India"));
+    	 * PersonCopy person2 = new PersonCopy(person1);
+    	 * person2.setName("Sumit");
+    	 * person2.getAddress().setStreetName("BN Bose Lane");
+    	 * person2.getAddress().setCity("kolkata");
+    	 * System.out.println(person1);
+    	 * System.out.println(person2);
+    	 */
+    	
+    	/**
+    	 * Serializable prototyping
+    	 * 
+    	 * PersonSerialized person1 = new PersonSerialized("Aninda", new AddressSerialized("R.N.T.P Bye Lane", "Shyamangar", "India"));
+    	 * PersonSerialized person2 = SerializationUtils.roundtrip(person1);
+    	 * person2.setName("Sumit");
+    	 * person2.getAddress().setStreetName("BN Bose Lane");
+    	 * person2.getAddress().setCity("kolkata");
+    	 * System.out.println(person1);
+    	 * System.out.println(person2);
+    	 */
     	
     	
     }
