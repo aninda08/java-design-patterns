@@ -54,10 +54,11 @@ package com.aninda.practice;
  */
 
 /**
- * Design Patterns Demo implementations
+ * Creational Design Patterns Demo implementations
+ * @author Aninda
  *
  */
-public class App
+public class CreationalPatternsDemoApp
 {
     /**
      * @param args
