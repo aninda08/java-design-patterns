@@ -1,5 +1,9 @@
 package com.aninda.practice;
 
+import com.aninda.practice.structural.bridge.abstraction.APayment;
+import com.aninda.practice.structural.bridge.concreteimplementor.CitiPaymentSystem;
+import com.aninda.practice.structural.bridge.refinedabstraction.CardPayment;
+
 /**
  * Adapter pattern imports
  * 
@@ -35,7 +39,13 @@ public class StructuralPatternsDemoApp {
 		
 		/**
 		 * ----------------Bridge Patterns------------------------
+		 * 
+		 * APayment order = new CardPayment();
+		 * order._IPaymentSystem = new CitiPaymentSystem();
+		 * order.makePayment();
 		 */
+		
+		
 		
 	}
 
