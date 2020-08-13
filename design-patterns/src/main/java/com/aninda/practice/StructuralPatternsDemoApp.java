@@ -1,8 +1,16 @@
 package com.aninda.practice;
 
-import com.aninda.practice.structural.bridge.abstraction.APayment;
-import com.aninda.practice.structural.bridge.concreteimplementor.CitiPaymentSystem;
-import com.aninda.practice.structural.bridge.refinedabstraction.CardPayment;
+import com.aninda.practice.structural.composite.Circle;
+import com.aninda.practice.structural.composite.GraphicObject;
+import com.aninda.practice.structural.composite.Square;
+
+/**
+ * Bridge patterns imports
+ * 
+ * import com.aninda.practice.structural.bridge.abstraction.APayment;
+ * import com.aninda.practice.structural.bridge.concreteimplementor.CitiPaymentSystem;
+ * import com.aninda.practice.structural.bridge.refinedabstraction.CardPayment;
+ */
 
 /**
  * Adapter pattern imports
@@ -13,7 +21,6 @@ import com.aninda.practice.structural.bridge.refinedabstraction.CardPayment;
  * import com.aninda.practice.structural.adapter.Rectangle;
  * import com.aninda.practice.structural.adapter.RectangleAdapter; 
  */
-
 
 /**
  * Structural Design pattern Demo Implementation
@@ -45,6 +52,23 @@ public class StructuralPatternsDemoApp {
 		 * order.makePayment();
 		 */
 		
+		/**
+		 * ----------------Composite Patterns---------------------
+		 */
+		
+		/**
+		 * Simple Composition
+		 * 
+		 * GraphicObject drawing = new GraphicObject();
+		 * drawing.setName("My Drawing");
+		 * drawing.children.add(new Square("Red"));
+		 * drawing.children.add(new Circle("Yellow"));
+		 * GraphicObject group = new GraphicObject();
+		 * group.children.add(new Circle("Blue"));
+		 * group.children.add(new Square("Blue"));
+		 * drawing.children.add(group);
+		 * System.out.println(drawing);
+		 */
 		
 		
 	}
