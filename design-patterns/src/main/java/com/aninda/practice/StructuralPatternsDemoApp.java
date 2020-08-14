@@ -1,5 +1,7 @@
 package com.aninda.practice;
 
+import com.aninda.practice.structural.decorator.MagicString;
+
 /**
  * Composite pattern imports
  * 
@@ -89,6 +91,13 @@ public class StructuralPatternsDemoApp {
 		 * layer.connectTo(layer2);
 		 */
 		
+		/**
+		 * ------------------Decorator Patterns-----------------------
+		 */
+		
+		MagicString s = new MagicString("String decorator Pattern");
+	    System.out.println(s + " has "
+	      + s.getNumberOfVowels() + " vowels");
 	}
 
 }
