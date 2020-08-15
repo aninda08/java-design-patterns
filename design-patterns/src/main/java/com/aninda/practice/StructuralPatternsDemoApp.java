@@ -1,6 +1,10 @@
 package com.aninda.practice;
 
 import com.aninda.practice.structural.decorator.MagicString;
+import com.aninda.practice.structural.decorator.dynamic.Circle;
+import com.aninda.practice.structural.decorator.dynamic.ColoredShape;
+import com.aninda.practice.structural.decorator.dynamic.Square;
+import com.aninda.practice.structural.decorator.dynamic.TransparentShape;
 
 /**
  * Composite pattern imports
@@ -95,9 +99,23 @@ public class StructuralPatternsDemoApp {
 		 * ------------------Decorator Patterns-----------------------
 		 */
 		
-		MagicString s = new MagicString("String decorator Pattern");
-	    System.out.println(s + " has "
-	      + s.getNumberOfVowels() + " vowels");
+		/**
+		 * Simple String decorator pattern
+		 * This demostrate the delegation of methods as String cannot be inherited since final class  
+		 * 
+		 * MagicString s = new MagicString("String decorator Pattern");
+		 * System.out.println(s + " has " + s.getNumberOfVowels() + " vowels");
+		 */
+		
+		/**
+		 * Dynamic Decorator pattern
+		 * 
+		 * Circle circle = new Circle(10);
+		 * ColoredShape coloredSquare = new ColoredShape(new Square(15),"red");
+		 * TransparentShape myCircle = new TransparentShape(new ColoredShape(new Circle(20),"blue"),50);
+		 * System.out.println(circle.info() + "\n" + coloredSquare.info() + "\n" + myCircle.info());
+		 */
+		
 	}
 
 }
