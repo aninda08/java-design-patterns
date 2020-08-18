@@ -4,6 +4,8 @@ import com.aninda.practice.structural.decorator.MagicString;
 import com.aninda.practice.structural.decorator.dynamic.Circle;
 import com.aninda.practice.structural.decorator.dynamic.ColoredShape;
 import com.aninda.practice.structural.decorator.dynamic.Square;
+import com.aninda.practice.structural.decorator.dynamic.StaticColoredShape;
+import com.aninda.practice.structural.decorator.dynamic.StaticTransparentShape;
 import com.aninda.practice.structural.decorator.dynamic.TransparentShape;
 
 /**
@@ -115,6 +117,18 @@ public class StructuralPatternsDemoApp {
 		 * TransparentShape myCircle = new TransparentShape(new ColoredShape(new Circle(20),"blue"),50);
 		 * System.out.println(circle.info() + "\n" + coloredSquare.info() + "\n" + myCircle.info());
 		 */
+		
+		/**
+		 * Static Decorator pattern
+		 * 
+		 * Circle circle = new Circle(10);
+		 * System.out.println(circle.info());
+		 * StaticColoredShape<Square> blueSquare = new StaticColoredShape<>(() -> new Square(20), "blue");
+		 * System.out.println(blueSquare.info());
+		 * StaticTransparentShape<StaticColoredShape<Circle>> myCircle = new StaticTransparentShape<>(() -> new StaticColoredShape<>(() -> new Circle(5), "green"), 50);
+		 * System.out.println(myCircle.info());
+		 */
+		
 		
 	}
 
