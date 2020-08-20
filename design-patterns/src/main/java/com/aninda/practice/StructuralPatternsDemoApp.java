@@ -2,6 +2,7 @@ package com.aninda.practice;
 
 import com.aninda.practice.structural.proxy.Car;
 import com.aninda.practice.structural.proxy.CarProxy;
+import com.aninda.practice.structural.proxy.Creature;
 import com.aninda.practice.structural.proxy.Driver;
 
 /**
@@ -178,6 +179,13 @@ public class StructuralPatternsDemoApp {
 		 * car.drive();
 		 */
 		
+		/**
+		 * property Proxy pattern
+		 * 
+		 * Creature creature = new Creature();
+		 * creature.setAgility(14);
+		 * System.out.println("The Creature is of agility " + creature.getAgility());
+		 */
 		
 	}
 
