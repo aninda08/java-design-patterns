@@ -1,8 +1,8 @@
 package com.aninda.practice;
 
-import com.aninda.practice.structural.protectionproxy.Car;
-import com.aninda.practice.structural.protectionproxy.CarProxy;
-import com.aninda.practice.structural.protectionproxy.Driver;
+import com.aninda.practice.structural.proxy.Car;
+import com.aninda.practice.structural.proxy.CarProxy;
+import com.aninda.practice.structural.proxy.Driver;
 
 /**
  * Flyweight pattern import

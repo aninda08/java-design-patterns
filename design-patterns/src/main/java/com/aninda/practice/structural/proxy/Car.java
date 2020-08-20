@@ -1,4 +1,4 @@
-package com.aninda.practice.structural.protectionproxy;
+package com.aninda.practice.structural.proxy;
 
 public class Car implements IDrivable {
 	protected Driver driver;
