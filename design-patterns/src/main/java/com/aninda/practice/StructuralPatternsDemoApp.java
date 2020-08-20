@@ -4,6 +4,9 @@ import com.aninda.practice.structural.proxy.Car;
 import com.aninda.practice.structural.proxy.CarProxy;
 import com.aninda.practice.structural.proxy.Creature;
 import com.aninda.practice.structural.proxy.Driver;
+import com.aninda.practice.structural.proxy.IHuman;
+import com.aninda.practice.structural.proxy.LoggingHandler;
+import com.aninda.practice.structural.proxy.Person;
 
 /**
  * Flyweight pattern import
@@ -180,12 +183,24 @@ public class StructuralPatternsDemoApp {
 		 */
 		
 		/**
-		 * property Proxy pattern
+		 * Property Proxy pattern
 		 * 
 		 * Creature creature = new Creature();
 		 * creature.setAgility(14);
 		 * System.out.println("The Creature is of agility " + creature.getAgility());
 		 */
+		
+		/**
+		 * Dynamic proxy for logging
+		 * 
+		 * Person person = new Person();
+		 * IHuman logged = LoggingHandler.withLogging(person, IHuman.class);
+		 * logged.walk();
+		 * logged.talk();
+		 * logged.talk();
+		 * System.out.println(logged);
+		 */
+		
 		
 	}
 
