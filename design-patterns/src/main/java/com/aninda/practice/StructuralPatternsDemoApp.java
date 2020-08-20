@@ -1,15 +1,30 @@
 package com.aninda.practice;
 
-import com.aninda.practice.structural.decorator.MagicString;
-import com.aninda.practice.structural.decorator.dynamic.Circle;
-import com.aninda.practice.structural.decorator.dynamic.ColoredShape;
-import com.aninda.practice.structural.decorator.dynamic.Square;
-import com.aninda.practice.structural.decorator.dynamic.StaticColoredShape;
-import com.aninda.practice.structural.decorator.dynamic.StaticTransparentShape;
-import com.aninda.practice.structural.decorator.dynamic.TransparentShape;
-import com.aninda.practice.structural.facade.Buffer;
-import com.aninda.practice.structural.facade.Console;
-import com.aninda.practice.structural.facade.Viewport;
+/**
+ * Flyweight pattern import
+ * 
+ * import com.aninda.practice.structural.flyweight.User;
+ */
+
+/**
+ * Decorator pattern imports
+ * 
+ * import com.aninda.practice.structural.decorator.MagicString;
+ * import com.aninda.practice.structural.decorator.dynamic.Circle;
+ * import com.aninda.practice.structural.decorator.dynamic.ColoredShape;
+ * import com.aninda.practice.structural.decorator.dynamic.Square;
+ * import com.aninda.practice.structural.decorator.dynamic.StaticColoredShape;
+ * import com.aninda.practice.structural.decorator.dynamic.StaticTransparentShape;
+ * import com.aninda.practice.structural.decorator.dynamic.TransparentShape;
+ */
+
+/**
+ * Facade pattern imports
+ * 
+ * import com.aninda.practice.structural.facade.Buffer;
+ * import com.aninda.practice.structural.facade.Console;
+ * import com.aninda.practice.structural.facade.Viewport;
+ */
 
 /**
  * Composite pattern imports
@@ -139,6 +154,13 @@ public class StructuralPatternsDemoApp {
 		 * console2.render();
 		 */
 		
+		/**
+		 * ----------------Flyweight Design Patterns-----------------
+		 * 
+		 * User user1 = new User("Aninda Chakraborty");
+		 * User user2 = new User("Munia Chakraborty");
+		 * Both the user share a common memory space for string 'Chakraborty'
+		 */
 		
 		
 	}
