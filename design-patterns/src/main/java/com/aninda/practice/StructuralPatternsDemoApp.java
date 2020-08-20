@@ -1,5 +1,9 @@
 package com.aninda.practice;
 
+import com.aninda.practice.structural.protectionproxy.Car;
+import com.aninda.practice.structural.protectionproxy.CarProxy;
+import com.aninda.practice.structural.protectionproxy.Driver;
+
 /**
  * Flyweight pattern import
  * 
@@ -160,6 +164,18 @@ public class StructuralPatternsDemoApp {
 		 * User user1 = new User("Aninda Chakraborty");
 		 * User user2 = new User("Munia Chakraborty");
 		 * Both the user share a common memory space for string 'Chakraborty'
+		 */
+		
+		/**
+		 * -----------------Proxy Design patterns----------------
+		 */
+		
+		/**
+		 * Protection Proxy pattern
+		 * 
+		 * Driver driver = new Driver(25);
+		 * Car car = new CarProxy(driver);
+		 * car.drive();
 		 */
 		
 		
