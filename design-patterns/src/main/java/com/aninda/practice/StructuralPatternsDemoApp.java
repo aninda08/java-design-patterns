@@ -7,6 +7,9 @@ import com.aninda.practice.structural.decorator.dynamic.Square;
 import com.aninda.practice.structural.decorator.dynamic.StaticColoredShape;
 import com.aninda.practice.structural.decorator.dynamic.StaticTransparentShape;
 import com.aninda.practice.structural.decorator.dynamic.TransparentShape;
+import com.aninda.practice.structural.facade.Buffer;
+import com.aninda.practice.structural.facade.Console;
+import com.aninda.practice.structural.facade.Viewport;
 
 /**
  * Composite pattern imports
@@ -128,6 +131,14 @@ public class StructuralPatternsDemoApp {
 		 * StaticTransparentShape<StaticColoredShape<Circle>> myCircle = new StaticTransparentShape<>(() -> new StaticColoredShape<>(() -> new Circle(5), "green"), 50);
 		 * System.out.println(myCircle.info());
 		 */
+		
+		/**
+		 * ----------------Facade Design patterns-----------------
+		 * 
+		 * Console console2 = Console.newConsole(30, 20);
+		 * console2.render();
+		 */
+		
 		
 		
 	}
