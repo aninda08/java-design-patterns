@@ -1,12 +1,16 @@
 package com.aninda.practice;
 
-import com.aninda.practice.structural.proxy.Car;
-import com.aninda.practice.structural.proxy.CarProxy;
-import com.aninda.practice.structural.proxy.Creature;
-import com.aninda.practice.structural.proxy.Driver;
-import com.aninda.practice.structural.proxy.IHuman;
-import com.aninda.practice.structural.proxy.LoggingHandler;
-import com.aninda.practice.structural.proxy.Person;
+/**
+ * Proxy pattern import
+ * 
+ * import com.aninda.practice.structural.proxy.Car;
+ * import com.aninda.practice.structural.proxy.CarProxy;
+ * import com.aninda.practice.structural.proxy.Creature;
+ * import com.aninda.practice.structural.proxy.Driver;
+ * import com.aninda.practice.structural.proxy.IHuman;
+ * import com.aninda.practice.structural.proxy.LoggingHandler;
+ * import com.aninda.practice.structural.proxy.Person;
+ */
 
 /**
  * Flyweight pattern import
