@@ -3,6 +3,15 @@ package com.aninda.practice;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import com.aninda.practice.behavioral.interpreter.BinaryOperation;
+import com.aninda.practice.behavioral.interpreter.IElement;
+import com.aninda.practice.behavioral.interpreter.Integer;
+import com.aninda.practice.behavioral.interpreter.Lexer;
+import com.aninda.practice.behavioral.interpreter.Parser;
+import com.aninda.practice.behavioral.interpreter.Token;
+import com.aninda.practice.behavioral.interpreter.Token.Type;
 
 /**
  * Command pattern imports
@@ -39,6 +48,31 @@ public class BehavioralPatternsDemo {
 		 * }
 		 */
 		
+		/**
+		 * -------------------Interpreter Patterns-------------------
+		 * 
+		 * String input = "(15+41)-(12+8)";
+		 * List<Token> tokens = Lexer.lex(input);
+		 * System.out.println(tokens.stream().map(t -> t.toString()).collect(Collectors.joining("\t")));
+		 * System.out.println(input + " = " + Parser.parse(tokens).eval());
+		 */
+		
 		
 	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
